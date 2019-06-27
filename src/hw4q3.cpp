@@ -72,4 +72,19 @@ void PriorityQueue<Item>::operator=(const PriorityQueue<Item>& source) {
     }
     this.data[last] = source.data[last];
 }
+
+template <class Item>
+size_t PriorityQueue<Item>::size() {
+    return used;
+}
+
+template <class Item>
+bool PriorityQueue<Item>::empty() {
+    return (used == 0);
+}
+
+template <class Item>
+Item PriorityQueue<Item>::front() {
+    return data[first];
+}
 #endif
