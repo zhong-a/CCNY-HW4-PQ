@@ -60,4 +60,16 @@ void PriorityQueue<Item>::pop() {
     first = nextIndex(first);
     used--;
 }
+
+template <class Item>
+void PriorityQueue<Item>::operator=(const PriorityQueue<Item>& source) {
+    this.capacity = source.capacity;
+    this.used = source.used;
+    this.first = source.first;
+    this.last = source.last;
+    for (int i = first; i != last; i = nextIndex(i)) {
+        this.data[i] = source.data[i];
+    }
+    this.data[last] = source.data[last];
+}
 #endif
