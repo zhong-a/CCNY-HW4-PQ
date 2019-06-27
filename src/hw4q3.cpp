@@ -48,7 +48,16 @@ void PriorityQueue<Item>::push(const Item& entry) {
         data[nextIndex(index)] = holder;
         index = prevIndex(index);
     }
+    used++;
+    last = nextIndex(last);
 }
 
-
+template <class Item>
+void PriorityQueue<Item>::pop() {
+    if (used < 1) {
+        return;
+    }
+    first = nextIndex(first);
+    used--;
+}
 #endif
