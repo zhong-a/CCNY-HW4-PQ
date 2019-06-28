@@ -37,7 +37,7 @@ class PriorityQueue {
         size_t used;
         size_t capacity;
         size_t nextIndex(size_t i) const {return (i+1)%capacity;}
-        size_t prevIndex(size_t i) const;
+        size_t prevIndex(size_t i) const {return (i-1)%capacity;}
 };
 
 #include "hw4q3.cpp"

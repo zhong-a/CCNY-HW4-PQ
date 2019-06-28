@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/hw4q3.cpp
+hw4q3.h
+../src/hw4q3.h
+
+../src/hw4q3.h
+iostream
+-
+cstdlib
+-
+cassert
+-
+hw4q3.cpp
+../src/hw4q3.cpp
+
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/PriorityQueue/main.cpp
+iostream
+-
+hw4q3.h
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/PriorityQueue/hw4q3.h
+
